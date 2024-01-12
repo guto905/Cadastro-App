@@ -1,17 +1,48 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro App</title>
+  <!-- Inclua os links para os seus estilos globais (se necessário) -->
+  <link rel="stylesheet" href="path/to/your/styles.css">
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <!-- Inclua os scripts necessários (Vue.js, Vue Router, etc.) -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script src="https://unpkg.com/vue-router@3"></script>
+
+  <!-- Se você estiver usando um sistema de módulos (ES6), inclua o seu script principal -->
+  <script type="module" src="./src/main.js"></script>
+
+  <!-- Se você estiver usando um sistema de módulos (ESM), inclua os scripts principais e de componentes -->
+  <!--
+    <script type="module" src="./src/main.js"></script>
+    <script type="module" src="./src/components/ClienteCadastro.vue"></script>
+    <script type="module" src="./src/components/ProdutoCadastro.vue"></script>
+    <script type="module" src="./src/components/AssociacaoProdutoCliente.vue"></script>
+    <script type="module" src="./src/components/ListaClientes.vue"></script>
+    <script type="module" src="./src/components/ListaProdutos.vue"></script>
+  -->
+
+  <!-- Se você estiver usando um sistema de módulos (CommonJS), inclua os scripts principais e de componentes -->
+  <!--
+    <script src="./src/main.js"></script>
+    <script src="./src/components/ClienteCadastro.vue"></script>
+    <script src="./src/components/ProdutoCadastro.vue"></script>
+    <script src="./src/components/AssociacaoProdutoCliente.vue"></script>
+    <script src="./src/components/ListaClientes.vue"></script>
+    <script src="./src/components/ListaProdutos.vue"></script>
+  -->
+
+  <!-- Inclua os links para seus scripts (se necessário) -->
+  <!-- <script src="path/to/your/script.js"></script> -->
+
+</body>
+
 </html>
+

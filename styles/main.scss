@@ -1,0 +1,61 @@
+ // Variáveis globais
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+
+// Importa o reset.css ou normalize.css para garantir uma base consistente
+@import url('reset.css'); // Substitua pelo caminho correto do seu reset ou normalize
+
+// Importa fontes do Google Fonts, se necessário
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+// Define as fontes padrão
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+// Estilo global para o corpo da página
+body {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+// Estilo do contêiner principal
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+// Estilos específicos para os botões
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: $primary-color;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+// Estilos específicos para os formulários
+form {
+  margin-bottom: 20px;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input,
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+}
+
